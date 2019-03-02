@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.30660377358490565" layoutX="89.0" layoutY="113.0" orientation="VERTICAL" prefHeight="638.0" prefWidth="738.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Text fill="#ae1515" layoutX="229.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Charger les fichiers CSV" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TabPane prefHeight="437.0" prefWidth="736.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <tabs>
+                      <Tab text="Stocks">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <SplitPane dividerPositions="0.5013623978201635" layoutX="99.0" layoutY="64.0" prefHeight="404.0" prefWidth="736.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                             <children>
+                                                <TableView layoutX="14.0" layoutY="14.0" prefHeight="402.0" prefWidth="364.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+                                                  <columns>
+                                                    <TableColumn prefWidth="75.0" text="Nom" />
+                                                    <TableColumn prefWidth="75.0" text="Quantité" />
+                                                  </columns>
+                                                </TableView>
+                                                <Text fill="#ae1515" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des stocks" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="10.0">
+                                                   <font>
+                                                      <Font name="System Bold" size="16.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                             <children>
+                                                <Text fill="#ae1515" layoutX="109.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste d'achat" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="13.0">
+                                                   <font>
+                                                      <Font name="System Bold" size="16.0" />
+                                                   </font>
+                                                </Text>
+                                                <TableView prefHeight="402.0" prefWidth="362.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+                                                  <columns>
+                                                    <TableColumn prefWidth="75.0" text="Nom" />
+                                                    <TableColumn prefWidth="75.0" text="Quantité" />
+                                                  </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                      </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="Chaines">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ComboBox layoutX="339.0" layoutY="69.0" prefWidth="150.0" AnchorPane.leftAnchor="339.0" AnchorPane.topAnchor="69.0" />
+                                    <Text layoutX="80.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choisissez une chaîne" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="69.0">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="140.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Niveau d'activation" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="129.0">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <TextField layoutX="309.0" layoutY="150.0" prefHeight="26.0" prefWidth="150.0" AnchorPane.leftAnchor="339.0" AnchorPane.topAnchor="129.0" />
+                                    <Text fill="#b22626" layoutX="280.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aucun benefice" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="197.2919921875">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Button layoutX="529.0" layoutY="328.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="64.0" text="PDF" />
+                                    <Button layoutX="622.0" layoutY="329.0" mnemonicParsing="false" text="EXCEL" />
+                                    <Button layoutX="583.0" layoutY="263.0" mnemonicParsing="false" text="Enregistrer" />
+                                    <Text fill="#ae1515" layoutX="232.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Simulation" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="13.5791015625">
+                                       <font>
+                                          <Font name="System Bold" size="22.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
